@@ -1,8 +1,8 @@
-FROM node:8.4
+FROM node:9.7.1
 
-MAINTAINER Carl St-Laurent <carl@carlstlaurent.com> 
+LABEL maintainer Carl St-Laurent <carl@carlstlaurent.com> 
 
-# Xvfb
+# Xvfbdocker 
 RUN apt-get update -qqy \
 	&& apt-get -qqy install xvfb \
 	&& rm -rf /var/lib/apt/lists/* /var/cache/apt/*
